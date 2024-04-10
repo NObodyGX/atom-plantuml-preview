@@ -122,7 +122,7 @@ module.exports =
           @html data.toString()
           svglist = document.getElementsByTagName 'svg'
           svg = svglist[0]
-          svg.style = "width: 100%; height: 100%;"
+          svg.style = "width: 100%; height: 80%;"
           panZoom = svgPanZoom "svg",
             zoomEnabled: true
             controlIconsEnabled: true
