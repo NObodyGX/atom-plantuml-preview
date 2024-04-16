@@ -1,2 +1,2 @@
 'atom-text-editor':
-  'ctrl-shift-p': 'atom-plantuml-preview:toggle'
+  'ctrl-shift-e': 'atom-plantuml-preview:toggle'
