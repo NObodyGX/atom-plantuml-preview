@@ -28,5 +28,5 @@ wget https://github.com/plantuml/plantuml/releases/download/v1.2024.4/plantuml.j
 - [x] preview plantuml file
 - [x] save as svg file
 - [x] save as png file
-- [ ] preview plantuml file which contains many diagrams
-- [ ] svg preview enhance
+- [x] preview plantuml file which contains many diagrams
+- [x] svg preview enhance

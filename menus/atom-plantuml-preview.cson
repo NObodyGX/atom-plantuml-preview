@@ -10,8 +10,8 @@ menu: [
 
 'context-menu':
   '.atom-plantuml-preview': [
-    {label: 'Save As svg', command: 'core:save-as'}
-    {label: 'Save As png', command: 'core:save-as'}
+    {label: 'Save As svg', command: 'atom-plantuml-preview:save-as-svg'}
+    {label: 'Save As png', command: 'atom-plantuml-preview:save-as-png'}
   ]
   '.tree-view .file .name[data-name$=\\.plantuml]':
     [{label: 'Plantuml Preview', command: 'atom-plantuml-preview:preview-plantuml'}]
