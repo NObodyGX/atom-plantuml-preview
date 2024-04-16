@@ -2,6 +2,10 @@
   "name": "atom-plantuml-preview",
   "version": "1.1.0",
   "main": "./lib/main",
+  "author": {
+    "name": "NObodyGX",
+    "email": "nobodygx@163.com"
+  },
   "description": "a plantuml preview package for atom/pulsar text editor by NObodyGX",
   "repository": "https://github.com/nobodygx/atom-plantuml-preview",
   "license": "MIT",
