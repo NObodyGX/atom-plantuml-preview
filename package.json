@@ -1,8 +1,10 @@
 {
   "name": "atom-plantuml-preview",
-  "main": "./lib/atom-plantuml-preview",
-  "version": "1.0.0",
-  "description": "preview plantuml package by NObodyGX",
+  "version": "1.1.0",
+  "main": "./lib/main",
+  "description": "a plantuml preview package for atom/pulsar text editor by NObodyGX",
+  "repository": "https://github.com/nobodygx/atom-plantuml-preview",
+  "license": "MIT",
   "keywords": [
     "plantuml",
     "plantuml-preview"
@@ -10,18 +12,16 @@
   "activationCommands": {
     "atom-workspace": "atom-plantuml-preview:toggle"
   },
-  "repository": "https://github.com/nobodygx/atom-plantuml-preview",
-  "license": "MIT",
   "engines": {
-    "atom": ">=0.174.0 <2.0.0",
+    "atom": "*",
     "node": ">=12"
   },
   "dependencies": {
     "atom-space-pen-views": "2.2.0",
     "node-plantuml": "^0.9.0",
-    "svg-pan-zoom": "^3.6.1",
     "fs-plus": "^3.1.1",
-    "underscore-plus": ""
+    "underscore-plus": "^1.0.0"
   },
-  "readme": "a plantuml preview package for atom"
+  "configSchema": {
+  }
 }

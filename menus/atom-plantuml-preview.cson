@@ -1,32 +1,21 @@
-# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
-'context-menu':
-  'atom-text-editor': [
-    {
-      'label': 'Plantuml Preview'
-      'command': 'atom-plantuml-preview:toggle'
-    }
-  ]
-  '.atom-plantuml-preview': [
-    {
-      'label': 'Save As PNG'
-      'command': 'atom-plantuml-preview:save-as-png'
-    },
-    {
-      'label': 'Save As SVG'
-      'command': 'atom-plantuml-preview:save-as-svg'
-    },
-  ]
-'menu': [
-  {
-    'label': 'Packages'
-    'submenu': [
-      'label': 'Plantuml Preview'
-      'submenu': [
-        {
-          'label': 'Toggle Preview'
-          'command': 'atom-plantuml-preview:toggle'
-        }
-      ]
+menu: [
+  label: 'Packages'
+  submenu: [
+    label: 'Plantuml Preview'
+    submenu: [
+      {label: 'Toggle Preview', command: 'atom-plantuml-preview:toggle'}
     ]
-  }
+  ]
 ]
+
+'context-menu':
+  '.atom-plantuml-preview': [
+    {label: 'Save As svg', command: 'core:save-as'}
+    {label: 'Save As png', command: 'core:save-as'}
+  ]
+  '.tree-view .file .name[data-name$=\\.plantuml]':
+    [{label: 'Plantuml Preview', command: 'atom-plantuml-preview:preview-plantuml'}]
+  '.tree-view .file .name[data-name$=\\.uml]':
+    [{label: 'Plantuml Preview', command: 'atom-plantuml-preview:preview-plantuml'}]
+  '.tree-view .file .name[data-name$=\\.puml]':
+    [{label: 'Plantuml Preview', command: 'atom-plantuml-preview:preview-plantuml'}]
