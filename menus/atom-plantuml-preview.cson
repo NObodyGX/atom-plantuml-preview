@@ -14,8 +14,8 @@ menu: [
     {label: 'Save As png', command: 'atom-plantuml-preview:save-as-png'}
   ]
   '.tree-view .file .name[data-name$=\\.plantuml]':
-    [{label: 'Plantuml Preview', command: 'atom-plantuml-preview:preview-plantuml'}]
+    [{label: 'Plantuml Preview', command: 'atom-plantuml-preview:toggle'}]
   '.tree-view .file .name[data-name$=\\.uml]':
-    [{label: 'Plantuml Preview', command: 'atom-plantuml-preview:preview-plantuml'}]
+    [{label: 'Plantuml Preview', command: 'atom-plantuml-preview:toggle'}]
   '.tree-view .file .name[data-name$=\\.puml]':
-    [{label: 'Plantuml Preview', command: 'atom-plantuml-preview:preview-plantuml'}]
+    [{label: 'Plantuml Preview', command: 'atom-plantuml-preview:toggle'}]
