@@ -18,9 +18,11 @@ cd ${plocate}/packages/atom-plantuml-preview && npm i
 # 3. replace plantuml.jar in node_modules with lastest version
 # lastest version support more syntax
 # if lastest is v1.2024.4, you can download it from here
-wget https://github.com/plantuml/plantuml/releases/download/v1.2024.4/plantuml.jar -O ~/.atom/packages/atom-plantuml-preview/node_modules/node-plantuml/vendor/plantuml.jar
+download_url=$(curl -H "Accept: application/vnd.github.v3+json" -k https://api.github.com/repos/plantuml/plantuml/releases/latest | grep "browser_download_url" | grep 'plantuml.jar"' | awk '{print $2}' | tr -d ',"')
+mv $plocate/packages/atom-plantuml-preview/node_modules/node-plantuml/vendor/plantuml.jar $plocate/packages/atom-plantuml-preview/node_modules/node-plantuml/vendor/plantuml_old.jar
+curl -k $download_url -o $plocate/packages/atom-plantuml-preview/node_modules/node-plantuml/vendor/plantuml.jar
 
-# 4. open atom and enjoy!!!
+# 4. open atom/pulsar and enjoy!!!
 ```
 
 ## todo
